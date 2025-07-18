@@ -53,6 +53,7 @@ namespace Task1.Reports
             string fileName = $"Screenshot_{DateTime.Now:yyyyMMdd_HHmmss}.png";
             string filePath = Path.Combine(imagesDir, fileName);
             Screenshot screenshot = ((ITakesScreenshot)driver).GetScreenshot();
+            screenshot.SaveAsFile(filePath);
             extentTest.Log(info, stepDetail,
                 MediaEntityBuilder.CreateScreenCaptureFromPath(filePath).Build());
         }
