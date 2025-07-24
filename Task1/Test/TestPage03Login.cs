@@ -12,7 +12,7 @@ namespace Task1.Test
         [TestMethod]
         [Priority(6)]
         [TestCategory("03_Login")]
-        public void TestLogin01ChuacoTK()
+        public void Test_03Login01ChuacoTK()
         {
             pagelogin.login(Data.Email1, Data.password1);
         }
@@ -20,7 +20,7 @@ namespace Task1.Test
         [TestMethod]
         [Priority(7)]
         [TestCategory("03_Login")]
-        public void TestLogin02dacoTk()
+        public void Test_03Login02dacoTk()
         {
             pagelogin.login(Data.Email, Data.password);
         }

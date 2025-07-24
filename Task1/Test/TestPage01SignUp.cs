@@ -12,7 +12,7 @@ namespace Task1.Test
         [TestMethod]
         [Priority(1)]
         [TestCategory("01_SignUp")]
-        public void TestSignUp1()
+        public void Test01_SignUp1()
         {
             signUp.SignUpFail1();
         }
@@ -20,7 +20,7 @@ namespace Task1.Test
         [TestMethod]
         [Priority(2)]
         [TestCategory("01_SignUp")]
-        public void TestSignUp2()
+        public void Test01_SignUp2()
         {
             signUp.SignUpFail2();
         }
@@ -28,7 +28,7 @@ namespace Task1.Test
         [TestMethod]
         [Priority(3)]
         [TestCategory("01_SignUp")]
-        public void TestSignUp3()
+        public void Test01_SignUp3()
         {
             signUp.SignUp();
         }

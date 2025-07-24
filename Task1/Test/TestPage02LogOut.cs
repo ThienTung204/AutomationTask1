@@ -14,7 +14,7 @@ namespace Task1.Test
         [TestMethod]
         [Priority(4)]
         [TestCategory("02_LogOut")]
-        public void TestLogOut01daLogin()
+        public void Test_02LogOut01daLogin()
         {
             delete.LogoutAccount();
         }
@@ -22,7 +22,7 @@ namespace Task1.Test
         [TestMethod]
         [Priority(5)]
         [TestCategory("02_LogOut")]
-        public void TestLogOut02ChuaLogin()
+        public void Test_02LogOut02ChuaLogin()
         {
             delete.LogoutAccount();
             ExtentReporting.LogScreenshot(driver, AventStack.ExtentReports.Status.Fail, "Chưa đăng nhập nên ko logOut đc");

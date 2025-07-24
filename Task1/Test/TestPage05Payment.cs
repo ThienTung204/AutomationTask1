@@ -13,7 +13,7 @@ namespace Task1.Test
         [TestMethod]
         [Priority(11)]
         [TestCategory("05_Payment")]
-        public void TestPayment01()
+        public void Test_05Payment01()
         {
             payment.paymentWithLogin();
         }

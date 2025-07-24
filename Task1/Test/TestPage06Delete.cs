@@ -14,7 +14,7 @@ namespace Task1.Test
         [TestMethod]
         [Priority(12)]
         [TestCategory("06_Delete")]
-        public void TestDelete01chualogin()
+        public void Test_06Delete01chualogin()
         {
             delete.LogoutAccount();
             Thread.Sleep(400);
@@ -24,7 +24,7 @@ namespace Task1.Test
         [TestMethod]
         [Priority(13)]
         [TestCategory("06_Delete")]
-        public void TestDelete02daLogin()
+        public void Test_06Delete02daLogin()
         {
             pagelogin.login(Data.Email, Data.password);
             delete.deleteAccount();
