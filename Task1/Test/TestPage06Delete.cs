@@ -1,5 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 using System.Threading;
 using Task1.Base;
 using Task1.Page;
@@ -11,20 +10,24 @@ namespace Task1.Test
     {
         PageDeleteAndLogout delete = new PageDeleteAndLogout(driver);
         PageLogin pagelogin = new PageLogin(driver);
+
         [TestMethod]
-        public void TestDelete01chualogin() 
+        [Priority(12)]
+        [TestCategory("06_Delete")]
+        public void TestDelete01chualogin()
         {
             delete.LogoutAccount();
             Thread.Sleep(400);
             delete.deleteAccount();
-
         }
+
         [TestMethod]
-        public void TestDelete02daLogin() 
+        [Priority(13)]
+        [TestCategory("06_Delete")]
+        public void TestDelete02daLogin()
         {
             pagelogin.login(Data.Email, Data.password);
             delete.deleteAccount();
-
         }
     }
 }
